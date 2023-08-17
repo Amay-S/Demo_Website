@@ -36,7 +36,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
+    padding: 1rem 7%;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -55,7 +55,10 @@ body {
     font-weight: 600;
     cursor: default;
     margin-right: auto;
+    align-items: center;
 }
+
+
 
 .navbar a {
     position: relative;
