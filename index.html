@@ -1,56 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website Template</title>
     <!-- box icons plugin -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- css plugin -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- javascript plugin -->
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo">Portfolio</a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="bx bxs-moon" id="darkMode-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="bx bxs-moon" id="darkMode-icon"></div>
     </header>
 
     <!-- home section design  -->
 
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Welcome, my name is</h3>
-            <h1>Amay Shah</h1>
-            <p>I am a skilled Software Developer with 3+ years of experience in designing, developing, and implementing web-based
-                applications using Adobe Experience Manager (AEM 6.1, 6.3, 6.4, 6.5). I have a strong understanding of web
-                development technologies and excellent problem-solving skills. I am also well-versed in Java, JSP, jQuery,
-                REST APIs, SOAP, Spring Boot, Python, Linux, SQL, MongoDB, AWS, HTML5, CSS, JavaScript, TypeScript, XML, JSON,
-                Angular2, NodeJS, and Git
-            </p>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxs-envelope'></i></a>
-                <a href="#"><i class='bx bxl-youtube'></i></a>
-            </div>
-            
-            <a href="#" class="btn">Download CV</a>
+      <div class="home-content">
+        <h3>Welcome, my name is</h3>
+        <h1>Amay Shah</h1>
+        <p>
+          I am a skilled Software Developer with 3+ years of experience in
+          designing, developing, and implementing web-based applications using
+          Adobe Experience Manager (AEM 6.1, 6.3, 6.4, 6.5).
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxs-envelope"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
         </div>
 
-        <div class="profession-container">
-            <div class="profession-box">
-                <div class="profession"></div>
-            </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developer</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-code-alt"></i>
+            <h3>AEM Developer</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bx-code-alt"></i>
+            <h3>Backend Developer</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bx-knife"></i>
+            <h3>Home Cook</h3>
+          </div>
+
+          <div class="circle"></div>
         </div>
+
+        <div class="overlay"></div>
+
+        <div class="home-img">
+          <img src="images/img.png" alt="" />
+        </div>
+      </div>
     </section>
-</body>
+
+    <!-- about section design  -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/img2.jpg" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>
+          Software Developer -- Toronto, Canada.
+        </h3>
+        <p>
+          I am a seasoned web developer with a strong passion for technology and
+          problem-solving. With a deep understanding of both front-end and
+          back-end technologies, I thrive in creating dynamic and robust web
+          applications that drive business success.
+        </p>
+        <p>
+          My technical expertise spans a wide range of languages and frameworks.
+          I'm well-versed in Java, JSP, jQuery, REST APIs, SOAP, Spring Boot,
+          Python, Linux, SQL, MongoDB, AWS, HTML5, CSS, JavaScript, TypeScript,
+          XML, JSON, Angular2, NodeJS, and Git.
+        </p>
+
+        <div id="more-content" style="display: none">
+          <p>
+            I have a strong foundation in AEM, with experience in Sling Model
+            and Sling Model Exporters implementations. I've developed Custom
+            components, Templates, OSGI components, Servlets, and Workflows. My
+            knowledge in AEM frontend implementations includes Sightly, Granite
+            UI, Coral 3, and customization on Granite UI. My involvement in
+            designing and implementing AEM modules has enabled web applications
+            to incorporate features like WCM, Clientlibs, Digital Asset
+            Management (DAM), Dispatcher, Workflows, SEO, and more.
+          </p>
+
+          <p>
+            I've designed and implemented RESTful APIs with Spring REST, managed
+            database connections using JDBC, and integrated AWS services
+            including EC2, S3, and Lambda functions. To protect sensitive
+            information, I've enforced security measures using Spring Security
+            and OAuth2. I've also used JPA and Hibernate for efficient ORM
+            mapping with SQL databases, and integrated CI/CD practices into the
+            workflow, employing tools like Jenkins for streamlined development.
+          </p>
+        </div>
+
+        <a href="#" class="btn" onclick="toggleContent(event, this)"
+          >Read More</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
