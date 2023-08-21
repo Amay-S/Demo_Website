@@ -100,6 +100,7 @@ section {
     padding: 10rem 7% 2rem;
 }
 
+/* ----------------------------------------------  */
 .home {
     display: flex;
     align-items: center; 
@@ -255,6 +256,8 @@ span {
     color: var(--main-color);
 }
 
+/* ----------------------------------------------  */
+
 .about {
     display: flex;
     justify-content: center;
@@ -283,4 +286,134 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+/* ----------------------------------------------  */
+
+.services {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.services h2 {
+    margin-bottom: 5rem;
+    
+}
+
+.company-link {
+    color: var(--main-color); /* Change this to match your theme */
+    text-decoration: underline; /* Underlines the link */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: 0.3s ease; /* Smooth color transition on hover */
+}
+
+.company-link:hover {
+    color: var(--secondary-color); /* Change on hover to match your theme */
+}
+
+
+.services .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
+    height: 500px; /* or whatever fixed height you want */
+    overflow: auto; /* will add scrollbars if content overflows the fixed height */
+}
+
+
+.services-container .services-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.services-box h3:hover {
+    color: var(--secondary-color);
+}
+.services-box p  {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+
+}
+
+/* ----------------------------------------------  */
+
+.portfolio {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.portfolio h2 {
+    margin-bottom: 5rem;
+    
+}
+
+.portfolio .portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolio-container .portfolio-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
+    height: 500px; /* or whatever fixed height you want */
+    overflow: auto; /* will add scrollbars if content overflows the fixed height */
+}
+
+
+.portfolio-container .portfolio-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+.portfolio-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.portfolio-box h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.portfolio-box h3:hover {
+    color: var(--secondary-color);
+}
+
+.portfolio-box ul  {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    text-align: left;
 }
