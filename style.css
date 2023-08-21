@@ -288,76 +288,6 @@ span {
     margin: 2rem 0 3rem;
 }
 
-/* ----------------------------------------------  */
-
-.services {
-    min-height: auto;
-    padding-bottom: 7rem;
-}
-.services h2 {
-    margin-bottom: 5rem;
-    
-}
-
-.company-link {
-    color: var(--main-color); /* Change this to match your theme */
-    text-decoration: underline; /* Underlines the link */
-    font-weight: bold; /* Makes the text bold */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: 0.3s ease; /* Smooth color transition on hover */
-}
-
-.company-link:hover {
-    color: var(--secondary-color); /* Change on hover to match your theme */
-}
-
-
-.services .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-    text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
-    transition: .5s ease;
-    height: 500px; /* or whatever fixed height you want */
-    overflow: auto; /* will add scrollbars if content overflows the fixed height */
-}
-
-
-.services-container .services-box:hover {
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
-    transform: scale(1.02);
-}
-
-.services-box i {
-    font-size: 4rem;
-    color: var(--main-color);
-}
-
-.services-box h3 {
-    font-size: 2.6rem;
-    transition: .5s ease;
-}
-
-.services-box h3:hover {
-    color: var(--secondary-color);
-}
-.services-box p  {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-
-}
 
 /* ----------------------------------------------  */
 
@@ -417,3 +347,122 @@ span {
     margin: 1rem 0 3rem;
     text-align: left;
 }
+
+/* ----------------------------------------------  */
+
+.services {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.company-link {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.company-link:hover {
+    color: var(--secondary-color);
+}
+
+.services .slider {
+    display: flex;
+    gap: 2rem;
+}
+
+.slider .services-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    height: 500px;
+    transition: .5s ease;
+    overflow: auto;
+}
+
+.slider .services-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.services-box h3:hover {
+    color: var(--secondary-color);
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.slick-prev, .slick-next {
+    font-size: 30px;
+    color: #333;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.slick-prev {
+    left: -40px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: -40px;
+    z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: var(--main-color);
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px; /* Adjust as needed */
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+  }
+  
+  .slick-dots li button {
+    font-size: 0; /* Hide the numbers */
+    width: 10px; /* Size of the dot */
+    height: 10px;
+    background-color: #FFD700; /* Default color of the dots */
+    border: none;
+    border-radius: 50%; /* Make the dots round */
+    outline: none;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: var(--main-color);/* Highlighted color of the active dot */
+  }
+  
+  /* ----------------------------------------------  */
+
+  
