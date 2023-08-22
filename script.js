@@ -1,5 +1,5 @@
 // slider for services section
-$(document).ready(function() {
+$(document).ready(function () {
   $('.slider').slick({
     infinite: true,
     slidesToShow: 1,
@@ -12,14 +12,41 @@ $(document).ready(function() {
   });
 });
 
+//scroll section
 
-// sticky navbar
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-  let header = document.querySelector(".header");
+  let top = window.scrollY;
 
+  section.forEach((sec, index) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((link, linkIndex) => {
+        link.classList.remove('active');
+        if (index === linkIndex) {
+          link.classList.add('active'); // directly use the link
+        }
+      });
+
+      // Debugging logs
+      console.log('Active section:', id);
+      console.log('Top:', top);
+      console.log('Offset:', offset);
+      console.log('Height:', height);
+    }
+  });
+
+  // sticky navbar
+  let header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 30);
 };
+
 
 // toggle function for 'read more button'
 
@@ -34,3 +61,5 @@ function toggleContent(e, element) {
     element.textContent = "Read More";
   }
 }
+
+
