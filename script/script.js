@@ -44,3 +44,31 @@ window.onscroll = () => {
 
 };
 
+/*
+// dark mode 
+let modeToggle = document.getElementById('mode-toggle');
+let body = document.body;
+
+modeToggle.onclick = () => {
+  body.classList.toggle('dark-mode'); // Toggle dark mode styles
+  
+  // Toggle between moon and sun icons
+  if (modeToggle.classList.contains('bxs-moon')) {
+    modeToggle.classList.remove('bxs-moon');
+    modeToggle.classList.add('bx-sun');
+  } else {
+    modeToggle.classList.remove('bx-sun');
+    modeToggle.classList.add('bxs-moon');
+  }
+}
+*/
+
+
+ScrollReveal({ 
+  reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 50
+});
+
+ScrollReveal().reveal('.home-content , .about-content, .portfolio-container, .slider', { origin: 'top'});
