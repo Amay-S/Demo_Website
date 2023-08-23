@@ -202,7 +202,42 @@
     }
 }
 
+/* Media query for screens with height greater than 700px */
+@media screen and (min-height: 700px) {
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 75rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
 
+    
+    /* Add other transformations for professions if needed */
+}
+
+@media screen and (min-height: 750px) {
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 80rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 85rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+}
 
 @media (max-width: 617px) {
     .portfolio .portfolio-container {
