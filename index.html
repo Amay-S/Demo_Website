@@ -330,23 +330,24 @@
   </section>
 
   <!-- contact section  -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="email" name="email" placeholder="Email Address">
+    </div>
 
-      <div class="input-box">
-        <input type="text" placeholder="Mobile Number">
-        <input type="text" placeholder="Subject">
-      </div>
+    <div class="input-box">
+      <input type="text" name="mobileNumber" placeholder="Mobile Number">
+      <input type="text" name="subject" placeholder="Subject">
+    </div>
 
-      <textarea name="" id="" col="30" row="10" placeholder="Enter Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-  </section>
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
 
   <!-- footer  -->
 
@@ -364,6 +365,7 @@
    <script src="https://unpkg.com/scrollreveal"></script>
    <script src="script/script.js"></script>
    <script src="script/ajax-script.js"></script>
+   <script src="server.js"></script>
 </body>
 
 </html>
