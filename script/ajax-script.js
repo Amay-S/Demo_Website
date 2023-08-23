@@ -12,6 +12,42 @@ $(document).ready(function () {
     });
 });
 
+//contact
+
+document.querySelector('form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        mobileNumber: e.target.mobileNumber.value,
+        subject: e.target.subject.value,
+        message: e.target.message.value
+    };
+
+    try {
+        const response = await fetch('/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.status !== 200) {
+            response.json().then(err => {
+                console.error(err); // Log the entire error object
+                alert('An error occurred while sending the email.');
+            });
+        } else {
+            alert('Email sent successfully.'); // Success message
+        }
+    } catch (error) {
+        console.error(error);
+        alert('An error occurred while sending the email.');
+    }
+});
+
 
 // toggle function for 'read more button'
 
