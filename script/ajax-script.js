@@ -34,19 +34,25 @@ document.querySelector('form').addEventListener('submit', async (e) => {
             body: JSON.stringify(formData)
         });
 
-        if (response.status !== 200) {
+        const messageDiv = document.getElementById('message');
+
+        if (response.status === 200) {
+            messageDiv.textContent = 'Email sent successfully!';
+            messageDiv.style.color = 'green';
+            e.target.reset(); // Resets the form
+        } else {
             response.json().then(err => {
                 console.error(err); // Log the entire error object
-                alert('An error occurred while sending the email.');
+                messageDiv.textContent = 'An error occurred while sending the email.';
+                messageDiv.style.color = 'red';
             });
-        } else {
-            alert('Email sent successfully.'); // Success message
         }
     } catch (error) {
         console.error(error);
         alert('An error occurred while sending the email.');
     }
 });
+
 
 
 // toggle function for 'read more button'
