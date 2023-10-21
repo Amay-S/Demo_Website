@@ -327,6 +327,7 @@ span {
 
 /* ----------------------------------------------  */
 
+/* 
 .portfolio {
     min-height: auto;
     padding-bottom: 7rem;
@@ -356,9 +357,9 @@ span {
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
     height: 500px;
-    /* or whatever fixed height you want */
+    
     overflow: auto;
-    /* will add scrollbars if content overflows the fixed height */
+
 }
 
 
@@ -386,6 +387,8 @@ span {
     margin: 1rem 0 3rem;
     text-align: left;
 }
+
+*/
 
 /* ----------------------------------------------  */
 
@@ -455,6 +458,12 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.services-box ul {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    text-align: left;
 }
 
 .slick-prev,
