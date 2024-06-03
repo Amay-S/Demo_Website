@@ -7,7 +7,7 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev"><</button>',
         nextArrow: '<button type="button" class="slick-next">></button>',
         autoplay: true,
-        autoplaySpeed: 5000, // 10000 ms = 10s
+        autoplaySpeed: 10000, // 10000 ms = 10s
         dots: true // enables dots for the slider 
     });
 });
