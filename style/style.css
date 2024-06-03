@@ -431,6 +431,12 @@ span {
     height: 400px;
     transition: .5s ease;
     overflow: auto;
+     /* Text rendering improvements */
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     text-rendering: optimizeLegibility;
+     backface-visibility: hidden;
+     transform: translate3d(0, 0, 0);
 }
 
 .slider .services-box:hover {
