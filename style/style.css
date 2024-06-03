@@ -327,7 +327,7 @@ span {
 
 /* ----------------------------------------------  */
 
-.portfolio {
+/* .portfolio {
     min-height: auto;
     padding-bottom: 7rem;
 }
@@ -356,9 +356,7 @@ span {
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
     height: 500px;
-    /* or whatever fixed height you want */
     overflow: auto;
-    /* will add scrollbars if content overflows the fixed height */
 }
 
 
@@ -385,7 +383,7 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     text-align: left;
-}
+} */
 
 /* ----------------------------------------------  */
 
@@ -402,7 +400,7 @@ span {
     margin-bottom: 5rem;
 }
 
-.company-link {
+/* .company-link {
     color: var(--main-color);
     text-decoration: underline;
     font-weight: bold;
@@ -412,7 +410,7 @@ span {
 
 .company-link:hover {
     color: var(--secondary-color);
-}
+} */
 
 .services .slider {
     display: flex;
