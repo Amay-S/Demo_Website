@@ -467,6 +467,13 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     text-align: left;
+    padding-left: 10px; /* Adjust padding to ensure bullet points are visible */
+    list-style-position: outside; /* Ensure bullets are outside the padding area */
+
+}
+
+.services-box ul li {
+    margin-left: 20px; /* Adjust margin to align text correctly with bullet points */
 }
 
 .slick-prev,
